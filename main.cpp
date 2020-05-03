@@ -2,7 +2,8 @@
 //Name: Orlando Valdez
 //Teacher: Dr_T
 //Date: 04-03-2020
-//Purpose: Use of knowledge of C++ and Recursion to solve the Towers of Hanoi problem
+//Purpose: Use of knowledge of C++ and Recursion to solve the Towers of Hanoi problem and demonstrate factorial recursion with user input
+
 #include <iostream>
 using namespace std;
 
@@ -19,10 +20,20 @@ void towerOfHanoi(int n, char from, char to, char rem)
   towerOfHanoi(n-1, rem, to, from);
 }
 
+int factorial(int);
+
+
 int main()
 {
-  int n =999; 
+  int n =4; 
   towerOfHanoi(n, 'A', 'C', 'B');
+
+  int number;
+  //ask for user input of number
+  cout << "Enter a integer value to display it's factorial: " ;
+  cin >> number;
+
+  //display the factorial of the number to the user
   
   return 0;
 }
