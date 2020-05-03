@@ -14,10 +14,10 @@ void towerOfHanoi(int n, char from, char to, char rem)
     cout << "Move Disk 1 from rod " << from << " to rod " << to << endl;
     return;
   }
-  towerOfHanoi(n-1, from, to, rem);
+  towerOfHanoi(n - 1, from, to, rem);
   cout << "Move Disk " << n << " from rod " << from << " to rod " << to << endl;
 
-  towerOfHanoi(n-1, rem, to, from);
+  towerOfHanoi(n - 1, rem, to, from);
 }
 
 int factorial(int);
