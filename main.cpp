@@ -30,10 +30,20 @@ int main()
 
   int number;
   //ask for user input of number
-  cout << "Enter a integer value to display it's factorial: " ;
+  cout << "\n\nEnter a integer value to display it's factorial: " ;
   cin >> number;
 
   //display the factorial of the number to the user
+  cout << "The factorial of " << number << " is ";
+  cout << factorial(number) << endl;
   
   return 0;
+}
+
+int factorial(int n)
+{
+  if (n == 0)
+     return 1;
+  else 
+     return n * factorial(n-1);
 }
